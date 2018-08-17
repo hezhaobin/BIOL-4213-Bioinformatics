@@ -142,3 +142,21 @@ Try `ls -a` and `ls -l` in your home directory. What do you see?
 ## 4. Learn to get help
 
 `man ls` gives you the manual for ls command. Try it.
+
+## 5. Some useful resources
+
+Unix cheatsheet [here](http://cheatsheetworld.com/programming/unix-linux-cheat-sheet/)
+
+Useful keyboard bindings when entering in the command line interface
+
+| Command| Meaning |
+|--------|---------|
+| Ctrl+A | Go to the beginning of the line. |
+| Ctrl+E | Go to the end of the line. |
+| Ctrl+L | Clear the screen. |
+| Ctrl+U | Clear the line before the cursor position.  |
+| Ctrl+K | Clear the line a er the cursor. |
+| Ctrl+C | Kill the command that is currently running.  |
+| Ctrl+D | Exit the current shell. |
+| Alt+F  | Move cursor forward one word (in OS X, Esc+F).  |
+| Alt+B  | Move cursor backward one word (in OS X, Esc+B). |
