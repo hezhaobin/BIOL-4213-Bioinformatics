@@ -23,9 +23,10 @@ Jan will give ~20-30 min intro to the course
 
 - How many people have heard of UNIX? In what context?
     - Anroid phone
-    - Airplane entertainment system ![reboot](https://i.ytimg.com/vi/6-dFmp6yF7g/hqdefault.jpg)
+    - Airplane entertainment system 
     - Mac OS: how many people uses Mac? How many of you know that Mac is built on a UNIX-like kernel
     - Chrome OS
+![reboot](https://i.ytimg.com/vi/6-dFmp6yF7g/hqdefault.jpg)
 
 - What is UNIX?
     - UNIX is a **time-sharing** operating system _kernel_: a program that controls the resources of a computer and allocates them among its users. It lets users run their programs; it controls the peripheral devices (discs, terminals, printers and the like); and it provides a file system that manages the long-term storage of information such as programs, data, and documents.
@@ -97,16 +98,18 @@ $ echo $PS1  # this variable controls the format of the "prompt"
 
 ## 2. How to navigate the Directory System
     
-**ls** = __L__i __s__t files and subdirectories in the current location.
+**ls** = List files and subdirectories in the current location.
 
-**cd** = __C__hange __D__irectory.
+**cd** = Change Directory.
 
+| Command | Meaning |
+|---------|---------|
 | `cd ..` | Move one directory up. |
 | `cd /`  | Move to the root directory. |
 | `cd ~`  | Move to the home directory. |
 | `cd -`  | Go back to the directory you visited previously. |
 
-**pwd** = __P__rint __W__orking __D__irectory
+**pwd** = Print Working Directory
 
 **Exercise**
 
@@ -127,8 +130,10 @@ See what is in each subdirectory under the root
 
 Similar to the "settings" or "preference" pane you are used to in a __G__raphic __U__ser __I__nterface (GUI), e.g. Windows and Mac, commands in the CLI also have "options". They are typically specified after the main command. Let's use the `ls` command as an example
 
-| `ls -a` | List __a__ll files (including hidden files). |
-| `ls -l` | Return a __l__ong list with details on access permissions, the number of links to a file
+| Command | Meaning |
+|---------|---------|
+| `ls -a` | List all files (including hidden files). |
+| `ls -l` | Return a long list with details on access permissions, the number of links to a file
 
 **Exercise**
 
