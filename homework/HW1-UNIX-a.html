@@ -1,0 +1,53 @@
+<h1 id="extract-information-from-a-genome-annotation-file-.gtf.">Extract information from a genome annotation file (.gtf).</h1>
+<p><strong>Due September 3rd</strong></p>
+<h2 id="prepare-data">Prepare data</h2>
+<ol type="1">
+<li>Go to <code>~/Documents/2018-Bioinfo/</code>.</li>
+<li>Create a sub-directory called <code>homework-1</code></li>
+<li><p>Obtain the gtf file by issuing the command</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="fu">wget</span> ftp://ftp.ensembl.org/pub/release-93/gtf/homo_sapiens/Homo_sapiens.GRCh38.93.gtf.gz</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="fu">gunzip</span> Homo_sapiens.GRCh38.93.gtf.gz <span class="co"># will take ~10 sec</span></a></code></pre></div></li>
+<li><p>Use the shell script to answer the following questions</p></li>
+</ol>
+<h2 id="questions">Questions</h2>
+<ol type="1">
+<li><p>(2 pts) How large is the gtf file you just obtained (hint: check out the -h flag in the manual for ls)</p></li>
+<li><p>(3 pts) What command would you use to view the first 5 lines of the file, and what did you learn about this annotation file (use natural language to explain what you understand from those 5 lines).</p></li>
+<li><p>(2 pts) How many lines in this file are comments (start with a “#”)? Write down the answer and the command you used to obtain it.</p></li>
+<li><p>(3 pts) What command would you use to view the last 5 lines of the file? How can you highlight the word “gene_name” in those lines and what gene name did you see?</p></li>
+<li><p>(2 pts) What command can you use to view the content of the file with control (namely, you can scroll up and down), and how can you make each row be displayed in one screen line, with the overflow cutoff rather than wrapped around?</p></li>
+<li><p>(2 pts) How can you use <code>grep</code> to “remove” the comment lines in order to view the actual annotations with the command above? Write down the command (hint: use pipe)</p></li>
+<li><p>(2 pts) How many genes are there in this build of the human genome? (hint: the third column of the file indicates the type of the feature. Use grep to select only those that match “gene”)? Write down the answer and the command you used to obtain it.</p>
+<p>Now let’s pick a gene and learn a bit more about it. Please refer to the table below to determine which gene you will be looking up</p></li>
+<li><p>(4 pts) Write down the command you will use to do the following: 1) select all lines that contain the gene name; 2) then select those lines from the last step that contain the word “protein_coding”; 3) finally write the output to a file named “my_gene.txt” and 4) report the total number of lines in this file. (hint: use <code>grep</code> twice).</p></li>
+<li>(4 pts) Looking only at those lines where the second column says “ensembl_havana”, answer the following questions
+<ol type="a">
+<li>(1 pts) Which chromosome is this gene on? (Note where do you get this information)</li>
+<li>(1 pts) How long is this gene?</li>
+<li>(1 pts) How many exons are there?</li>
+<li>(1 pts) How many coding exons there are</li>
+<li>(bonus 2 pts) How many amino acids does this gene have? (explain how you calculated this) <em>note: the bonus points will be added to the total score until it reaches 24</em></li>
+</ol></li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th>Last name starts with</th>
+<th>Gene name to look up</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A-E</td>
+<td>APOE</td>
+</tr>
+<tr class="even">
+<td>H-J</td>
+<td>FOXO1</td>
+</tr>
+<tr class="odd">
+<td>K-T</td>
+<td>SOD1</td>
+</tr>
+</tbody>
+</table>
