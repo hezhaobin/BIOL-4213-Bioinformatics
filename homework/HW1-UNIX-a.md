@@ -15,8 +15,10 @@ title: Bioinformatics Homework \#1 UNIX
    ```
 1. Use the shell script to answer the following questions
 
+Here is the [explanation](ftp://ftp.ensembl.org/pub/release-93/gtf/homo_sapiens/README) of the gtf file.
+
 ## Questions
-1. (2 pts) How large is the gtf file you just obtained (hint: check out the -h flag in the manual for ls)
+1. (2 pts) How large is the gtf file you just obtained (hint: check out the `-h` flag in the manual for `ls`)
 
 
 
@@ -60,6 +62,6 @@ title: Bioinformatics Homework \#1 UNIX
 | Last name starts with | Gene name to look up |
 |-----------------------|----------------------|
 | A-E                   | APOE                 |
-| H-J                   | FOXO1                |
-| K-T                   | SOD1                 |
+| F-J                   | FOXO1                |
+| K-Z                   | SOD1                 |
 
