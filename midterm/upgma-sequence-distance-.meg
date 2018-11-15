@@ -1,0 +1,35 @@
+
+#mega
+!Title: upgma-sequence.phy;
+!Format DataType=Distance DataFormat=LowerLeft NTaxa=5;
+!Description
+  Analysis 
+    Analysis ---------------------- Distance Estimation
+    Scope ------------------------- Pairs of taxa
+  Estimate Variance
+    Variance Estimation Method ---- None
+  Substitution Model
+    Substitutions Type ------------ Nucleotide
+    Model/Method ------------------ Jukes-Cantor model
+    Substitutions to Include ------ All
+  Rates and Patterns
+    Rates among Sites ------------- Uniform rates
+    Pattern among Lineages -------- Same (Homogeneous)
+  Data Subset to Use
+    Gaps/Missing Data Treatment --- Complete deletion
+  No. of Sites : 15
+  d : Estimate
+;
+
+[1] #Homo
+[2] #Pan
+[3] #Bos
+[4] #Mus
+[5] #Rattus
+
+[       1     2     3     4     5 ]
+[1]        
+[2]  0.147       
+[3]  0.572 0.572       
+[4]  0.730 0.730 0.330       
+[5]  0.730 0.730 0.441 0.233       

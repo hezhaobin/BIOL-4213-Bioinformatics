@@ -1,0 +1,15 @@
+---
+title: "Yeast PHO motif analysis"
+author: "Bin He"
+date: "11/12/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## install dependencies
+source("http://bioconductor.org/biocLite.R")
+biocLite(c("Biobase", "GEOquery", "limma"))
+
