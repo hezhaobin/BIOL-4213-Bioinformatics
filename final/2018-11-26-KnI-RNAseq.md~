@@ -1,0 +1,24 @@
+---
+title: 
+author: Bin He
+date: 
+categories:
+tags:
+---
+
+# Introduction
+In the study of Brooks et al. 2011, the authors wanted to identify exons regulated by the Pasilla gene (the Drosophila homologue of the mammalian splicing regulators Nova-1 and Nova-2 proteins) using RNA sequencing data. They depleted the Pasilla (PS) gene in Drosophila melanogaster by RNA interference (RNAi).
+
+Total RNA was then isolated and used to prepare both single-end and paired-end RNA-seq libraries for treated (PS depleted) and untreated samples. These libraries were sequenced to obtain RNA-seq reads for each sample. The RNA-seq data for the treated and the untreated samples can be then compared to identify the effects of Pasilla gene depletion on splicing events.
+
+In this tutorial, we will reproduce the analysis of the RNA-Seq data step by step.
+
+The original data is available at NCBI Gene Expression Omnibus (GEO) under accession number GSE18508.
+
+In this tutorial we will use the first 7 samples:
+
+4 untreated samples: GSM461176, GSM461177, GSM461178, GSM461182
+3 treated samples (Pasilla gene depleted by RNAi): GSM461179, GSM461180, GSM461181
+Each sample constitutes a separate biological replicate of the corresponding condition (treated or untreated). Moreover, two of the treated and two of the untreated samples are from a paired-end sequencing assay, while the remaining samples are from a single-end sequencing experiment.
+
+The raw RNA-seq reads have been extracted from the Sequence Read Archive (SRA) files and converted into FASTQ files. In the first part of this tutorial we will use the files for 2 of the 7 samples, to demonstrate analysis of FASTQs. Optionally later you can import the FASTQs for the other 5 samples.
